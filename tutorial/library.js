@@ -6,10 +6,12 @@ function $(selector)
 
 	self.html = function()
 	{
-		//als er .html() achter de functie staat dan returned dedze functie
-		//de variable in html markup in de console log
+		// If.html()is placed behind a function, in this case a console log
+		// it will put the selected item in html markup
 		return self.element;
 	}
+
+	//Changes the attribute of the selected item and returns it
 	self.attr = function(name,value)
 	{
 		if(!value) return self.element.getAttribute(name)
@@ -18,17 +20,20 @@ function $(selector)
 		return self;
 	}
 
+	//Returns properties of a"on" event handler
 	self.on = function(type, callback)
 	{
 		self.element['on' + type] = callback;
 		return self;
 	}
 
-	self.height = function()
+	//Returns the width of the selected item.
+	self.width = function()
 	{
 		return self.element.offsetWidth;	
 	}
 
+	//Changes the css of the selected item
 	self.css = function(name, value)
 	{
 		if (!value) self.element.setAttribute("style", "color:red; border: 1px solid blue;");

@@ -2,21 +2,27 @@
 	<head>
 		<title>My Library || Tutorial</title>
 
-		<!-- Style Sheet -->
-
 		<!-- Scripts -->
 		<script src="library.js"></script>
 		<script type="text/javascript">
 			window.onload = function()
 			{
-				console.log($('div').attr('test', 'testing value').height()) //Zet de data van de variable 'div' in html markup en maakt van de title value --> test, en de value van de div --> testing value
+				 //Returns the title value --> test, and the value of the div --> testing value. It also returns the wdith of the selector which in this case is the div property.
+				console.log($('div').attr('test', 'testing value').width())
+				
+				//Returns the properties of a click (double click ---> dblclick in this case, can be changed to a single "onclick" as well)
 				$('div').on('dblclick', function(event)
 				{
 					console.log(event)
 				})
 
-				//Verander de CSS van de div met de css functie binnen de library
+				//Changes the css of the variable "div". If this function is empty, it will use the properties inside the library.
+
+				//With Default values
 				$('div').css()
+
+				//With own values
+				//$('div').css('style', 'color:blue;')
 			}
 		</script>
 	</head>
