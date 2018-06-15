@@ -6,7 +6,7 @@ The folder <b>tutorial</b> includes a small tutorial of a Javascript Module Libr
 the entire folder and its files. All the files necessary are included in the folder. All files have
 comments included to explain usage of functions.
 
-[View the Live Demo](http://i345175.iris.fhict.nl/reaperfy)
+[View the Live Demo](https://i300323.hera.fhict.nl/library/tutorial/)
 
 ## Functions
 
