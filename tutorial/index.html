@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>My Library || Tutorial</title>
+
+		<!-- Style Sheet -->
+
+		<!-- Scripts -->
+		<script src="library.js"></script>
+		<script type="text/javascript">
+			window.onload = function()
+			{
+				console.log($('div').attr('test', 'testing value').height()) //Zet de data van de variable 'div' in html markup en maakt van de title value --> test, en de value van de div --> testing value
+				$('div').on('dblclick', function(event)
+				{
+					console.log(event)
+				})
+
+				//Verander de CSS van de div met de css functie binnen de library
+				$('div').css()
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="box" title="text">Hi</div>
+	</body>
+
+</html>
