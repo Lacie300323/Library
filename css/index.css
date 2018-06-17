@@ -1,13 +1,21 @@
 .box
 {
 	height: 25vh;
-	width: 15vw;
+	width: 18vw;
 	background-color: #2E2E2E;
+	float: left;
+	margin-right: 10px;
+	color: white;
+	text-align: center;
+	line-height: 25vh;
+	font-family: Arial;
+	font-size: 30px;
 }
 
 h1
 {
 	text-align: center;
 	color: white;
-	line-height: 25vh;
+	line-height: 22vh;
+	font-size: 25px;
 }
