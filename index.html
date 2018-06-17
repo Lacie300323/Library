@@ -4,27 +4,52 @@
 
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 
-		<script src="library.js"></script>
+		<!--Scripts-->
+		<script src="js/library.js"></script>
 		<script type="text/javascript">
 			window.onload = function()
 			{
-				//testing library console.log($('div').html())
+				
 
 				$('div').on('click', function(event)
 				{
-					//Test # code console.log($('div').changeBg())
+					//Changes Background color using a color generator
 					$('div').changeBg()
-					$('h1').css("style","color: black")
-					//default settings ---> $('h1').css() 
-				})
+
+				})	
+
+				//Changes color of the selector every interval
+				$('#box2').randomcol()
+
+
+				/*
+					//Lines for testing parts in the code, make sure to also change this in the library.js
+					//The lines nessecary are commented out.
+
+					//testing library ---> console.log($('div').html())
+
+					//Checking rgb value ---> console.log($('div').contr())
+					
+					$('div').on('click', function(event)
+					{
+						//Test # color code ---> console.log($('div').changeBg())
+						$('div').changeBg()
+						//$('h1').contr()
+						//$('h1').css("style","color: black")
+						//default settings ---> $('h1').css() 
+					})	
+				*/
 			}
 		</script>
 	</head>
 
 	<body>
-		<div class="box" title="text">
-			<h1>Hi!</h1>
+		<div class="box" id="box1" title="text">
+			<h1>Click on Me!</h1>
 		</div>
+
+		<div class="box" id="box2" title="text">Very Colorful!</div>
+		<div class="box" id="box3">Much WOW!</div>
 	</body>
 
 </html>
