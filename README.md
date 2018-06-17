@@ -16,16 +16,16 @@ comments included to explain usage of functions.
 
 ## Functions
 The Colorfy Library includes the following functions:
-*.html() 
-*.on()
-*.css()
-*.changeBG()
-*.randomcol()
-*.hover()
-*.contr()
+* .html() 
+* .on()
+* .css()
+* .changeBG()
+* .randomcol()
+* .hover()
+* .contr()
 
 All functions parameters can be customized to create your own custom colors except <b>.randomcol(), .on(),
-.html() and .contr(). The Colorfy Library also includes comments which will explain how to the function.
+.html() and .contr()__. The Colorfy Library also includes comments which will explain how to the function.
 
 
 ## Getting Started
