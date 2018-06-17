@@ -58,7 +58,7 @@ also add the __<script> "onload"__ to your html as shown below.
 The CSS file can be changed to your liking and does not intervene with the library script.
 
 
-##How to Use
+## How to Use
 
 In order to use the functions in the Colorfy Library you have to include the function together with
 the html element as shown below:
@@ -76,7 +76,7 @@ Here the HTML element is the element with the ID __box2__ and the function is ca
 ZIP and files will also include example code lines in case needed.
 
 
-###Custom Parameters
+### Custom Parameters
 
 In case the "How to Use" did not explain the custom parameters part enough, this part will explain it just in case.
 To change certain parameters to your own liking, you can do the following. Let's take the __.css()__ function as an example:
