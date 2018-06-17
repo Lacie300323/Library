@@ -15,7 +15,17 @@ comments included to explain usage of functions.
 
 
 ## Functions
-All functions parameters can be customized to create your own custom css
+The Colorfy Library includes the following functions:
+*.html() 
+*.on()
+*.css()
+*.changeBG()
+*.randomcol()
+*.hover()
+*.contr()
+
+All functions parameters can be customized to create your own custom colors except <b>.randomcol(), .on(),
+.html() and .contr(). The Colorfy Library also includes comments which will explain how to the function.
 
 
 ## Getting Started
@@ -26,7 +36,7 @@ Download the ZIP file from this repository
 ### Step 2
 
 Include the Javascript Library file and the CSS file in the <head> of your HTML file. Make sure to
-also add the <script> "onload" as shown below.
+also add the __<script> "onload"__ as shown below.
 ```
   <head>
 		<title>Library</title>
