@@ -1,13 +1,14 @@
 function $(selector)
 {
 	var self = {};  //This wil work the same as "this"
-	var allchar = "0123456789ABCDEF";
+	var allchar = "0123456789ABCDEF"; //Color code numbers and letters
 	self.selector = selector; //Anything passed into the $("") in the html script, will be taken as the selector
-	self.element = document.querySelector(self.selector);
+	self.element = document.querySelector(self.selector); //In order to use the functions, I need to get the first element in the document
+	//in between the $('') in order to make a fuction work. To do that I use a querySelector
 
 
 /*
-	//Using this to test and see if the libary is working
+	//Using this to test and see if the libary.js is working
 	self.html = function()
 	{
 		// If html()is placed behind a function, in this case a console log
@@ -29,6 +30,7 @@ function $(selector)
 		//If there's no set value it will change css to default css below
 		if (!value) self.element.setAttribute("style", "color:red; border: 1px solid blue;");
 		
+		//Sets Attribute of the style to the selector
 		self.element.setAttribute(name, value);
 		return self;
 	}
@@ -50,11 +52,12 @@ function $(selector)
 		return self;
 	}
 
-	self.randomcol = function (name, value)
+	//Changes background-color of the selector by intervals
+	self.randomcol = function ()
 	{
 		var rgb = ['255', '0', '0']; //Default rbg property list consisting of 3 numbers between 0 and 255
 
-
+		//Changes color every interval
 		setInterval(function()
 		{
 
@@ -62,10 +65,12 @@ function $(selector)
 		rgb[1] = Math.floor(Math.random() * 255); //Returns a random number between 0 and 255 for the color green
 		rgb[2] = Math.floor(Math.random() * 255); //Returns a random number between 0 and 255 for the color blue
 
+		//Stores the random generated rgb color code into bgcol variable by using the ['255', '0', '0'] given above.
 		var bgcol = 'rgb('+rgb[0]+','+rgb[1]+','+rgb[2]+')';
 		//return bgcol; <--- use to check if the rgb code generating works
 
 		//Sets the rgb value from bgcol into the css style background-color
+		//And changes the bg color every second (1000), change the 1000 to make it slower or faster.
 		self.element.setAttribute("style", "background-color:" +bgcol);
 		}, 1000);
 		return self
