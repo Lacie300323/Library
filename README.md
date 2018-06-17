@@ -25,18 +25,20 @@ The Colorfy Library includes the following functions:
 * .contr()
 
 All functions parameters can be customized to create your own custom colors except <b>.randomcol(), .on(),
-.html() and .contr()__. The Colorfy Library also includes comments which will explain how to the function.
+.html() and .contr()</b>. The Colorfy Library also includes comments which will explain how to the function.
 
 
 ## Getting Started
 
 ### Step 1
-Download the ZIP file from this repository
+Download the ZIP file of this repository. You can use the default files that come with the ZIP file or just add the
+__library.js__ to your js folder. The CSS and HTML are not necessary, but there are changes you need to make to your
+own HTML file. If youre using the default files, you can skip the steps ahead an continue to the __"How to Use" section__.
 
 ### Step 2
 
-Include the Javascript Library file and the CSS file in the <head> of your HTML file. Make sure to
-also add the __<script> "onload"__ as shown below.
+Include the Javascript Library file and the CSS file (in case used) in the <head> of your HTML file. Make sure to
+also add the __<script> "onload"__ to your html as shown below.
 ```
   <head>
 		<title>Library</title>
@@ -70,10 +72,23 @@ the html element as shown below:
 			}
 		</script>
 ```
-Here the HTML element is the ID box2 and the function is called .randomcol()
+Here the HTML element is the element with the ID __box2__ and the function is called __.randomcol()__. The downloaded
+ZIP and files will also include example code lines in case needed.
 
 
 ###Custom Parameters
 
+In case the "How to Use" did not explain the custom parameters part enough, this part will explain it just in case.
+To change certain parameters to your own liking, you can do the following. Let's take the __.css()__ function as an example:
 
-##How to Install
+If you want to change the color and height of your div, you can change the parameters 
+of the .css() function.
+
+Example:
+```
+$('#box3').css('style','color: green; height: 40vh;')
+				
+```
+If the parameters of the function is empty, the funtion will fall back to default settings given by
+the css file or other style changes you included.
+
