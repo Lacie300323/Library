@@ -14,6 +14,10 @@ comments included to explain usage of functions.
 [View the Live Demo](https://i300323.hera.fhict.nl/library/tutorial/)
 
 
+## Functions
+All functions parameters can be customized to create your own custom css
+
+
 ## Getting Started
 
 ### Step 1
@@ -22,7 +26,7 @@ Download the ZIP file from this repository
 ### Step 2
 
 Include the Javascript Library file and the CSS file in the <head> of your HTML file. Make sure to
-also add the <script
+also add the <script> "onload" as shown below.
 ```
   <head>
 		<title>Library</title>
@@ -39,13 +43,24 @@ also add the <script
 			}
 		</script>
 ```
+The CSS file can be changed to your liking and does not intervene with the library script.
 
 
+##How to Use
 
-###How to Use
-
-
-###Defaults
+In order to use the functions in the Colorfy Library you have to include the function together with
+the html element as shown below:
+```
+  <head>
+		<script type="text/javascript">
+			window.onload = function()
+			{
+				//Changes color of the selector every interval
+				$('#box2').randomcol()
+			}
+		</script>
+```
+Here the HTML element is the ID box2 and the function is called .randomcol()
 
 
 ###Custom Parameters

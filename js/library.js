@@ -76,13 +76,6 @@ function $(selector)
 		return self
 	}
 
-	self.noHover = function(name, value)
-	{
-		self.element.setAttribute("style", "color: white;");
-		return self;
-	
-	}
-
 	//Changes color when hovered over.
 	self.hover = function(name, value)
 	{
